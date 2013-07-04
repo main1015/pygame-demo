@@ -73,6 +73,7 @@ class Ball(pygame.sprite.Sprite):
         # Get attributes for the height/width of the screen
         self.screenheight = pygame.display.get_surface().get_height()
         self.screenwidth = pygame.display.get_surface().get_width()
+        print '-'*20,self.screenheight,self.screenwidth
 
     # This function will bounce the ball off a horizontal surface (not a vertical one)
     def bounce(self,diff):
@@ -206,7 +207,7 @@ exit_program = False
 while exit_program != True:
 
     # Limit to 30 fps
-    clock.tick(30)
+    clock.tick(10)
 
     # Clear the screen
     screen.fill(black)
